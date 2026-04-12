@@ -1,7 +1,9 @@
 # Pidoy
 
 **Framework:** Svelte JS (via Vite)
+
 **Module:** Job Posting
+
 **AI Tools:** Antigravity
 
 **Prompt:** turn these into a web app in a web design using Svelte JS
@@ -9,9 +11,7 @@ Create this program...
 
 ## Installation 
 
-To replicate this repository and run it on a different computer, follow these steps:
-
-1. **Install Node.js:** Verify you have [Node.js](https://nodejs.org/) installed (version 16 or higher is recommended) by running `node -v` in your terminal.
+1. **Install Node.js:** 
 2. **Clone the Repository:**
    ```bash
    git clone <your-repository-url>
@@ -29,19 +29,16 @@ To replicate this repository and run it on a different computer, follow these st
    npm run dev
    ```
 5. **View the App:**
-   Open your browser and navigate to the local server URL provided in your terminal (usually `http://localhost:5173` or `http://localhost:5174`).
+   Open your browser and navigate to the local server URL provided in your terminal.
 
----
 
 ## Screenshots
-
-*(Note: To display these correctly on GitHub, please save the screenshots you provided into a folder named `screenshots` in this directory, and ensure the filenames match the ones below, or drag-and-drop the images directly into GitHub's README editor.)*
 
 ### Landing Page
 ![Landing Page](./screenshots/landing.png)
 
 ### Alumni Registration
-![Registration Page](./screenshots/register.png)
+![Registration Page](./screenshots/registration.png)
 
 ### Dashboard
 ![Dashboard Page](./screenshots/dashboard.png)
@@ -50,4 +47,7 @@ To replicate this repository and run it on a different computer, follow these st
 ![Jobs Page](./screenshots/jobs.png)
 
 ### Job Applications
-![Applications Page](./screenshots/applications.png)
+![Application Page](./screenshots/application.png)
+
+### Profile Page
+![Profile Page](./screenshots/profile.png)
