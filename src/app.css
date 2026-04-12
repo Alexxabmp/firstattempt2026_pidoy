@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  --color-primary: #0A1C68;
+  --color-primary-light: #1A34A0;
+  --color-primary-dark: #000B33;
+  --color-accent-gold: #D4AF37;
+  --color-accent-gold-light: #FFF7E6;
+  
+  --color-bg: #F4F6F9;
+  --color-card-bg: #FFFFFF;
+  
+  --color-text-main: #1F2937;
+  --color-text-muted: #6B7280;
+  --color-text-light: #9CA3AF;
+  
+  /* Status Colors */
+  --color-status-green-bg: #E3FCEF;
+  --color-status-green-text: #006644;
+  --color-status-yellow-bg: #FFFAE6;
+  --color-status-yellow-text: #B28800;
+  --color-status-blue-bg: #E1EAFE;
+  --color-status-blue-text: #0A1C68;
+
+  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  --border-radius: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text-main);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: inherit;
+}
+
+/* Utilities */
+.app-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  min-height: 100vh;
+  position: relative;
+  background-color: var(--color-bg);
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+.app-container.guest {
+  flex-direction: column;
+}
+
+.scroll-container {
+  flex: 1;
+  overflow-y: auto;
+  padding-bottom: 40px; 
+  height: 100vh;
+}
+
+/* Shared Button Styles */
+.btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 16px 24px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.2s;
+}
+
+.btn-primary:active {
+  opacity: 0.8;
+}
+
+.btn-secondary {
+  background-color: #E6E8F2;
+  color: var(--color-primary);
+  padding: 16px 24px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: opacity 0.2s;
+}
+
+.btn-secondary:active {
+  background-color: #DDE1EE;
+}
