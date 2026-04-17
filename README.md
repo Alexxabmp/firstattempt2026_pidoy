@@ -51,3 +51,53 @@ Create this program...
 
 ### Profile Page
 ![Profile Page](./screenshots/profile.png)
+
+**Master Prompt:**
+```bash
+From this university branding image (logo + colors), extract the main brand colors and identify the closest matching design style.
+
+Then generate a complete Production-ready Progressive Web App (PWA) setup with consistent branding.
+
+REQUIREMENTS:
+
+1. Manifest (manifest.json):
+- University-based app name and short_name
+- theme_color and background_color derived from extracted branding colors
+- display: "standalone"
+- start_url: "/"
+- Correct icon paths:
+  /icons/icon-192.png
+  /icons/icon-512.png
+
+2. Fonts:
+- Use Libre Baskerville as the primary font
+- Provide:
+  a. Google Fonts <link> tag
+  b. CSS global font styling (body + headings)
+  c. Proper fallback font stack
+
+3. Service Worker (service-worker.js):
+- Cache core assets: /, index.html, CSS, JS, icons
+- Enable offline support
+- Use a simple cache-first strategy
+- Ensure correct activation and fetch handling
+
+4. Icons:
+- Provide instructions to generate 192x192 and 512x512 icons from the logo
+- Ensure correct naming and folder structure (/icons/)
+- Ensure icons match manifest requirements
+
+5. Output format:
+Clearly separate sections:
+- Manifest JSON
+- HTML Font Link
+- CSS Font Setup
+- Service Worker Code
+- Icon Instructions
+
+Make sure everything is consistent, production-ready, and suitable for a real PWA deployment.
+```
+**Error:**
+```bash
+fix error: can't install
+```
